@@ -1,0 +1,452 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #2e2e2e;
+  font-family: Ubuntu, Montserrat, sans-serif;
+}
+
+img {
+  width: 31.87rem;
+  height: 23.81rem;
+}
+
+header {
+  padding-bottom: 3.875rem;
+  position: relative;
+  overflow: hidden;
+}
+
+header .background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("/images/background-header.jpg");
+  background-position: center;
+  background-size: cover;
+  z-index: -1;
+  filter: brightness(0.4);
+  scale: 1.1;
+}
+
+header .header {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+header svg {
+  width: 9rem;
+  height: auto;
+}
+
+header .languages-login {
+  display: flex;
+  gap: 1.125rem;
+  position: relative;
+  margin-left: 16.25rem;
+}
+
+header .languages-login svg {
+  fill: whitesmoke;
+  stroke: whitesmoke;
+  position: absolute;
+  width: 15px;
+  height: 15px;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 10px;
+  pointer-events: none;
+}
+
+header .languages-login select {
+  padding-left: 20px;
+  width: 8.25rem;
+  height: 1.875rem;
+  text-align: center;
+  background: rgba(0, 0, 0, 0.4);
+  color: #fff;
+  border-radius: 0.25rem;
+  cursor: pointer;
+}
+
+header .languages-login select:focus {
+  outline: none;
+}
+
+header .languages-login button {
+  width: 4.25rem;
+  height: 1.875rem;
+  border-radius: 0.25rem;
+  border: none;
+  background-color: #df0404;
+  color: #fff;
+  transition: 0.4s;
+  font-weight: 900;
+}
+
+header .languages-login button:hover {
+  background-color: #a80707;
+  transition: 0.2s;
+  cursor: pointer;
+}
+
+header .first-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 1rem;
+  margin-top: 10rem;
+  color: #fff;
+}
+
+header .first-section h1 {
+  font-size: 3rem;
+}
+
+header .first-section p {
+  font-size: 1.5rem;
+  margin-top: 0.625rem;
+}
+
+header .first-section h3 {
+  font-size: 1.25rem;
+  font-weight: 400;
+  line-height: 1.5;
+  margin-top: 0.325rem;
+}
+
+header .first-section .email-register {
+  display: flex;
+  gap: 0.5rem;
+  position: relative;
+}
+
+header .first-section .email-register input {
+  position: relative;
+  width: 16.25rem;
+  height: 2.62rem;
+  border-radius: 0.25rem;
+  border: 1px solid rgb(102, 100, 100);
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 0.75rem;
+}
+
+header .first-section .email-register input:focus {
+  outline: #fff;
+  color: #fff;
+}
+
+header .first-section .email-register .placeholder {
+  position: absolute;
+  top: 12px;
+  left: 10px;
+  color: #999;
+  pointer-events: none;
+}
+
+.email-register label:focus + label,
+.email-register label:not(:placeholder-shown) + label {
+  top: -20px;
+  left: 10px;
+  font-size: 12px;
+  color: #333;
+}
+
+header .first-section .email-register button {
+  width: 7rem;
+  height: 2.62rem;
+  border-radius: 0.25rem;
+  background-color: #df0404;
+  border: none;
+  color: #fff;
+  margin-bottom: 4.5rem;
+  font-size: 1rem;
+  transition: 0.4s;
+  font-weight: 900;
+}
+
+header .first-section .email-register button:hover {
+  background-color: #a80707;
+  transition: 0.2s;
+  cursor: pointer;
+}
+
+main .second-section {
+  display: flex;
+  background-color: #000;
+  color: #fff;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5rem;
+  padding: 5rem;
+}
+
+main .second-section .text-info {
+  max-width: 32.5rem;
+}
+
+main .second-section h2 {
+  font-size: 3rem;
+  font-weight: 900;
+}
+
+main .second-section p {
+  font-size: 1.5rem;
+  margin-top: 1.25rem;
+}
+
+main .third-section {
+  display: flex;
+  background-color: #000;
+  color: #fff;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5rem;
+  padding: 5rem;
+}
+
+main .third-section .text-info {
+  max-width: 33.75rem;
+}
+
+main .third-section h2 {
+  font-size: 3rem;
+  font-weight: 900;
+}
+
+main .third-section p {
+  font-size: 1.5rem;
+  margin-top: 1.25rem;
+}
+
+main .fourth-section {
+  display: flex;
+  background-color: #000;
+  color: #fff;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5rem;
+  padding: 5rem;
+}
+
+main .fourth-section .text-info {
+  max-width: 35rem;
+}
+
+main .fourth-section h2 {
+  font-size: 3rem;
+  font-weight: 900;
+}
+
+main .fourth-section p {
+  font-size: 1.5rem;
+  margin-top: 1.25rem;
+}
+
+main .fifth-section {
+  display:flex;
+  background-color: #000;
+  color: #fff;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5rem;
+  padding: 5rem;
+}
+
+main .fifth-section .text-info {
+  max-width: 36.25rem;
+}
+
+main .fifth-section h2 {
+  font-size: 3rem;
+  font-weight: 900;
+}
+
+main .fifth-section p {
+  font-size: 1.5rem;
+  margin-top: 1.25rem;
+}
+
+main .frequently-questions {
+  background-color: #000;
+  color: #fff;
+  padding-top: 4rem;
+  padding-bottom: 1rem;
+}
+
+main .frequently-questions h2 {
+  text-align: center;
+  font-size: 3rem;
+  font-weight: 900;
+  margin-bottom: 1.5rem;
+}
+
+main .frequently-questions .buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  max-width: 62rem;
+  margin: auto;
+}
+
+main .frequently-questions .buttons button {
+  display: flex;
+  justify-content: space-between;
+  padding: 2rem;
+  color: #fff;
+  background-color: #2d2d2d;
+  border: none;
+  font-size: 1.5rem;
+  transition: .5s;
+  cursor: pointer;
+}
+
+main .frequently-questions .buttons button:hover {
+  transition: .5s;
+  background-color: #535353
+}
+
+main .frequently-questions .buttons i {
+  scale: 2;
+  color: #fff;
+  transition: .5s;
+}
+
+.frequently-questions .buttons .button-text {
+  display: none;
+  position: relative;
+  font-size: 1.5rem;
+  font-weight: 400;
+  padding: 2rem;
+  margin-top: -6px;
+  background-color: #2d2d2d;
+}
+
+.frequently-questions .buttons .button-text.show {
+  display: block;
+  
+}
+
+main .frequently-questions h3 {
+  font-size: 1.25rem;
+  font-weight: 400;
+  line-height: 1.5;
+  text-align: center;
+  margin-top: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+main .frequently-questions .email-register {
+  display: flex;
+  gap: 0.5rem;
+  justify-content: center;
+}
+
+main .frequently-questions .email-register input {
+  width: 16.25rem;
+  height: 2.62rem;
+  border-radius: 0.25rem;
+  border: 1px solid rgba(102, 100, 100);
+  background-color: rgba(19, 19, 19, 0.6);
+  padding: 0.75rem;
+}
+
+main .frequently-questions .email-register input:focus {
+  outline: #fff;
+  color: #fff;
+}
+
+main .frequently-questions .email-register button {
+  width: 7rem;
+  height: 2.62rem;
+  border-radius: 0.25rem;
+  background-color: #df0404;
+  border: none;
+  color: #fff;
+  margin-bottom: 4.5rem;
+  font-size: 1rem;
+  transition: .4s;
+  font-weight: 900;
+}
+
+main .frequently-questions .email-register button:hover {
+  background-color: #a80707;
+  transition: .2s;
+  cursor: pointer;
+}
+
+footer {
+  padding: 2rem 25rem 5rem;
+  background-color: #000;
+  color: rgba(255, 255, 255, 0.7);
+  font-weight: 400;
+}
+
+footer .doubts {
+  padding-bottom: 1.5rem;
+}
+
+footer .links ul {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 18px;
+}
+
+footer a {
+  color: rgba(255, 255, 255, 0.7);;
+  text-decoration: underline;
+}
+
+footer .languages-login {
+  position: relative;
+}
+
+footer select {
+  width: 8.25rem;
+  height: 1.875rem;
+  padding-left: 1.2rem;
+  text-align: center;
+  background: rgba(0, 0, 0, 0.4);
+  color: #fff;
+  border-radius: 0.25rem;
+  cursor: pointer;
+  margin-top: 1.8rem;
+}
+
+footer select:focus {
+  outline: none;
+}
+
+footer .languages-login svg {
+  position: absolute;
+  fill: whitesmoke;
+  stroke: whitesmoke;
+  width: 15px;
+  height: 15px;
+  top: 50%;
+  transform: translateY(50%);
+  left: 10px;
+  pointer-events: none;
+}
+
+footer p {
+  font-size: 0.875rem;
+  margin-top: 1.5rem;
+  font-weight: 400;
+}
+
+.separator {
+  height: 0.5rem;
+  background-color: #292929;
+}
